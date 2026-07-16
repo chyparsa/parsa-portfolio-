@@ -272,3 +272,57 @@ input:focus, textarea:focus { border-color: #1f6feb; outline: 3px solid rgba(31,
   display: block;
   margin: auto;
 }
+.theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  padding: 0.6rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  --ink: #f8edf3;
+  --muted: #cfbec8;
+  --paper: #171116;
+  --cream: #251920;
+  --rose: #ec9ab2;
+  --rose-dark: #ffb3ca;
+  --plum: #3c2133;
+  --lavender: #332a45;
+  --mint: #203a34;
+  --line: #4c3944;
+  --white: #211820;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+body.dark-mode .site-header {
+  background: rgba(23, 17, 22, 0.92);
+}
+
+body.dark-mode .about,
+body.dark-mode .marquee,
+body.dark-mode .project-card,
+body.dark-mode .contact-form {
+  background: #211820;
+}
+
+body.dark-mode .experience {
+  background: #251920;
+}
+
+body.dark-mode .education-strip {
+  background: #203a34;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #291f26;
+  color: var(--ink);
+}
+
+body.dark-mode .nav-links {
+  background: var(--paper);
+}
