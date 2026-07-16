@@ -281,7 +281,18 @@ input:focus, textarea:focus { border-color: #1f6feb; outline: 3px solid rgba(31,
   font-weight: 700;
   cursor: pointer;
 }
+/* Dark mode button */
+.theme-toggle {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  padding: 0.6rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
 
+/* Dark mode colors */
 body.dark-mode {
   --ink: #f8edf3;
   --muted: #cfbec8;
@@ -313,16 +324,31 @@ body.dark-mode .experience {
   background: #251920;
 }
 
+body.dark-mode .projects,
+body.dark-mode .contact {
+  background: #171116;
+}
+
 body.dark-mode .education-strip {
   background: #203a34;
+}
+
+body.dark-mode .contact-card {
+  background: #7f3f59;
+}
+
+body.dark-mode .button-ghost,
+body.dark-mode .theme-toggle {
+  background: #2c2028;
+  color: #f8edf3;
 }
 
 body.dark-mode input,
 body.dark-mode textarea {
   background: #291f26;
-  color: var(--ink);
+  color: #f8edf3;
 }
 
 body.dark-mode .nav-links {
-  background: var(--paper);
+  background: #171116;
 }
