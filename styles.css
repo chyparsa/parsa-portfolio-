@@ -40,8 +40,19 @@ button { color: inherit; }
 .nav-links { display: flex; align-items: center; gap: 1.7rem; padding: 0; margin: 0; list-style: none; }
 .nav-links a { text-decoration: none; font-size: .94rem; font-weight: 600; color: var(--muted); }
 .nav-links a:hover { color: var(--rose-dark); }
-.nav-cta { border: 1px solid var(--ink); border-radius: 999px; padding: .65rem 1rem; color: var(--ink) !important; }
-.nav-cta:hover { background: var(--ink); color: white !important; }
+.nav-cta {
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: .65rem 1rem;
+  color: var(--ink);
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.nav-cta:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
 .menu-toggle { display: none; width: 2.75rem; height: 2.75rem; border: 1px solid var(--line); background: white; border-radius: 50%; cursor: pointer; }
 .menu-toggle span:not(.sr-only) { display: block; width: 1.2rem; height: 2px; margin: 4px auto; background: var(--ink); }
 
