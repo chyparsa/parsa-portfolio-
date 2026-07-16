@@ -386,3 +386,13 @@ body.dark-mode textarea {
 body.dark-mode .site-footer {
   background-color: #0e0a0d !important;
 }
+body.dark-mode .nav-cta {
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  background: transparent !important;
+}
+
+body.dark-mode .nav-cta:hover {
+  background: #ffffff !important;
+  color: #171116 !important;
+}
