@@ -263,3 +263,22 @@ input:focus, textarea:focus { border-color: #1f6feb; outline: 3px solid rgba(31,
   .button, .nav-cta, .project-card, .contact-card, input, textarea { border: 2px solid ButtonText; }
   .butterfly-flight, .hero-glow, .portrait-pattern { display: none; }
 }
+.hero-profile-photo {
+    width: 380px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 32px;
+
+    border: 8px solid white;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,.18);
+
+    transition: transform .35s ease;
+}
+
+.hero-profile-photo:hover {
+    transform: translateY(-6px);
+}
