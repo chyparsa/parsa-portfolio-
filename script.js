@@ -161,3 +161,29 @@ if (movableButterfly) {
     movableButterfly.style.top = `${clamp(rect.top, 0, window.innerHeight - movableButterfly.offsetHeight)}px`;
   });
 }
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle?.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  const isDarkMode = document.body.classList.contains("dark-mode");
+
+  themeToggle.textContent = isDarkMode ? "Light mode" : "Dark mode";
+  themeToggle.setAttribute("aria-pressed", String(isDarkMode));
+
+  localStorage.setItem(
+    "portfolio-theme",
+    isDarkMode ? "dark" : "light"
+  );
+});
+
+const savedTheme = localStorage.getItem("portfolio-theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-mode");
+
+  if (themeToggle) {
+    themeToggle.textContent = "Light mode";
+    themeToggle.setAttribute("aria-pressed", "true");
+  }
+}
